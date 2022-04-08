@@ -1,0 +1,142 @@
+<html>
+<head>
+
+<script>
+function abc() {
+window.alert("Click ok to confirm this form");
+document.write("Thanks! for submitting the form");
+}
+
+</script>
+	<style>
+.name{
+margin-top:20px;
+}
+.body{
+background-image:url('w6.png');
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+.header{
+color:white;
+background-color:blue;
+width:50%;
+float:left;
+}
+
+	#container{
+background-color:white;
+
+width:30%;
+margin-left:450px;
+margin-bottom:45px;
+margin-top:40px;
+border:2px solid blue;
+border-radius:40px 40px 0px 0px;
+
+height:85%;
+/*  background-color: red;*/ /* For browsers that do not support gradients */
+  /*background-image: linear-gradient( to right,orange,white,green);*/
+
+<!-- we can also use it as(180deg,red,yellow,green),(to left/to top/to bottom right/to bottom left/top right/top left,pink,violet,yellow) 
+by default it runs from top to bottom -->
+<!-- we can also give % to the colors, according to which they will occupy that much of space (green 50%,red,yellow) -->
+}
+input[type=text],select
+{
+border:2px solid blue;
+background-color:skyblue;
+border-radius:25px;
+}
+input[type=password]{
+border:2px solid red;
+background-color:skyblue;
+border-radius:25px;
+}
+input[type=submit]{
+background-color:blue;
+width:100%;
+height:40px;
+border:2px solid blue;
+border-radius:25px;
+}
+input[type=submit]:hover{
+background-color:grey;
+}
+input[type=text]:hover
+{
+background-color:gold;
+}
+.a{
+color:white;
+}
+a:hover{
+color:gold;
+}
+.home{
+float:left;
+width:50%;
+margin-bottom:25px;
+background-color:blue;
+}
+	</style>
+</head>
+<body class="body">
+
+<div class="header">
+<a href="lovely sweets description page.html" class="a" ><h3>lovely sweets</h3></a>
+</div>
+<div class="home">
+<a href="home.html" class="a" ><h3>HOME</h3></a>
+</div>
+
+<br /><br /><br />
+	<div id="container">
+<center><h1><u><i>TUCKSHOPS FEEDBACKS</i></u></h1></center>
+<form>
+<fieldset>
+<legend>tuckshops feedback</legend>
+name:<input type="text" placeholder="write your name" class="name">
+<br /><br />
+GENDER:<input type="radio" id="mard" name="gen" value="male"> 
+
+
+	<! -- here the name attribute is used to give the name to the input element --> 
+
+
+<label for="mard">male</label>
+<input type="radio" name="gen" id="mahila" value="female"> 
+
+
+	<!-- here value will be send to server to identify which button is selected -->
+
+
+<label for="mahila">female</label>
+<hr />
+class:<input type="text" value="i read in class-">
+<br /><br />
+<hr />
+write your comment:<textarea  name="fname"  rows="2" cols="30" placeholder="comment here"></textarea>
+<br /><br />
+<hr />
+select shop name:
+  <select name="sec">
+<option>lovely sweets</option>
+<option>africana cafe</option>
+<option>internet cafe</option>
+<option>cafe coffee day</option>
+   </select>
+<br /><br /><br /><br />
+<hr />
+PASSWORD:<input type="password" placeholder="write password here">
+<br /><br />
+<hr />
+EMAIL-ID:<input type="email" name="email" placeholder="e.g-xyz123@gmail.com">
+<br /><br />
+<hr />
+<input type="submit" value="submits" onclick="abc()">
+</fieldset>
+</form>
+</div>
+</body>
+</html>
